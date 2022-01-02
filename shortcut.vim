@@ -11,7 +11,6 @@ imap <silent> <s-F12> <Plug>StopMarkdownPreview
 
 
 " floaterm shortcuts
-nnoremap <silent>   <s-F7>  :FloatermKill<CR>
 tnoremap <silent>   <s-F7>  <C-\><C-n>:FloatermKill<CR>
 nnoremap <silent>   <F7>    :FloatermNew<CR>
 tnoremap <silent>   <F7>    <C-\><C-n>:FloatermNew<CR>
