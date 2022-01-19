@@ -1,0 +1,29 @@
+
+     +----------------------------------+
+     |                                  |
+     |   Vi veri universum vivus vici   |
+     |                                  |
+     +----------------------------------+
+
+   [e]  <empty buffer>
+
+   MRU
+
+   [0]   ~/.vim/vimrc
+   [1]   ~/.vim/.test/a.swift
+   [2]   ~/.vim/basic_settings.vim
+   [3]   ~/.zshrc
+   [4]   ~/swift-format/Sources/SwiftFormatConfiguration/Configuration.swift
+   [5]   ~/swift-format/Sources/SwiftFormatConfiguration/Indent.swift
+   [6]   ~/Library/org.swift.swiftpm/collections.json
+   [7]   /opt/homebrew/Cellar/vim/8.2.4100/share/vim/vim82/doc/help.txt
+   [8]   ~/Downloads/InterfacingWithUIKit/Complete/Landmarks/Views/PageView/PageView.swift
+   [9]   ~/Downloads/InterfacingWithUIKit/Complete/Landmarks/Views/PageView/PageControl.swift
+
+   MRU /Users/jiangjoshua/.vim
+
+   [10]  vimrc
+   [11]  .test/a.swift
+   [12]  basic_settings.vim
+
+   [q]  <quit>

@@ -28,9 +28,15 @@ Plug 'kana/vim-textobj-entire'                 " text object for entire buffer
 
 Plug 'machakann/vim-highlightedyank'           " high light yank
 
-Plug 'ycm-core/YouCompleteMe'                  " auto complete
-
 Plug 'w0rp/ale'                                " syntax check
+
+Plug 'mattn/vim-lsp-settings'                  " lsp
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/vim-lsp'
+
+Plug 'rhysd/vim-lsp-ale'                       " bridge ale and lsp
 
 Plug 'michaeljsmith/vim-indent-object'         " indent object
 
@@ -40,10 +46,7 @@ Plug 'Lokaltog/vim-easymotion'                 " fast move
 
 Plug 'tpope/vim-surround'                      " handle quoating
 
-
 Plug 'jiangmiao/auto-pairs'                    " complete braces
-
-Plug 'keith/swift.vim'                         " swift language support
 
 Plug 'tpope/vim-fugitive'                      " git support
 
@@ -55,6 +58,7 @@ Plug 'plasticboy/vim-markdown'                 " markdown language
 Plug 'frazrepo/vim-rainbow'                    " ranbow braces
 
 Plug 'voldikss/vim-floaterm'                   " float terminal
+
 
 call plug#end()
 
