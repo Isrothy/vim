@@ -28,6 +28,8 @@ Plug 'kana/vim-textobj-entire'                 " text object for entire buffer
 
 Plug 'machakann/vim-highlightedyank'           " high light yank
 
+Plug 'othree/xml.vim'                          " xml support
+
 Plug 'w0rp/ale'                                " syntax check
 
 Plug 'mattn/vim-lsp-settings'                  " lsp
@@ -66,10 +68,10 @@ call plug#end()
 runtime plugin_settings/vimplus_startify_settings.vim
 runtime plugin_settings/nerd_tree_settings.vim
 runtime plugin_settings/airline_settings.vim
-runtime plugin_settings/ycm_settings.vim
 runtime plugin_settings/markdown_settings.vim
 runtime plugin_settings/vim_rainbow_settings.vim 
 runtime plugin_settings/floaterm_settings.vim
 
 
 colorscheme nord
+

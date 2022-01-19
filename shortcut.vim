@@ -1,3 +1,7 @@
+" Leader
+let g:mapleader = "\\"
+
+
 " NERDTree shortcuts
 map <F9> :NERDTreeToggle<CR>
 map <F8> :NERDTreeFind<CR>
@@ -41,3 +45,7 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 imap <c-space> <Plug>(asyncomplete_force_refresh)
+
+" LSP 
+nnoremap  <leader>f :LspDocumentFormat<CR>
+nnoremap  <leader>r :LspRename<CR>
