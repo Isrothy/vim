@@ -5,7 +5,9 @@ runtime search_settings.vim
 runtime buffer_settings.vim
 runtime code_settings.vim
 
+
 call plug#begin(expand('~/.vim/plugged'))
+
 
 Plug 'arcticicestudio/nord-vim'                " nord color scheme
 Plug 'ackyshake/Spacegray.vim'                 " space gray color scheme
@@ -32,11 +34,11 @@ Plug 'othree/xml.vim'                          " xml support
 
 Plug 'w0rp/ale'                                " syntax check
 
-Plug 'mattn/vim-lsp-settings'                  " lsp
-Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/async.vim'                " LSP
+Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
 
 Plug 'rhysd/vim-lsp-ale'                       " bridge ale and lsp
 
@@ -65,13 +67,22 @@ Plug 'voldikss/vim-floaterm'                   " float terminal
 call plug#end()
 
 
+if executable('sourcekit-lsp')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'sourcekit-lsp',
+        \ 'cmd': {server_info->['sourcekit-lsp']},
+        \ 'whitelist': ['swift'],
+        \ })
+endif
+
+
 runtime plugin_settings/vimplus_startify_settings.vim
 runtime plugin_settings/nerd_tree_settings.vim
 runtime plugin_settings/airline_settings.vim
 runtime plugin_settings/markdown_settings.vim
 runtime plugin_settings/vim_rainbow_settings.vim 
 runtime plugin_settings/floaterm_settings.vim
+runtime plugin_settings/ale_settings.vim
 
 
 colorscheme nord
-
