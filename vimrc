@@ -68,7 +68,7 @@ Plug 'machakann/vim-highlightedyank'           " high light yank
 
 Plug 'othree/xml.vim'                          " xml support
 
-Plug 'w0rp/ale'                                " syntax check
+" Plug 'w0rp/ale'                                " syntax check
 
 Plug 'prabirshrestha/async.vim'                " LSP
 Plug 'prabirshrestha/vim-lsp'
@@ -76,7 +76,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'mattn/vim-lsp-settings'
 
-Plug 'rhysd/vim-lsp-ale'                       " bridge ale and lsp
+" Plug 'rhysd/vim-lsp-ale'                       " bridge ale and lsp
 
 Plug 'michaeljsmith/vim-indent-object'         " indent object
 
@@ -118,7 +118,7 @@ runtime plugin_settings/airline_settings.vim
 runtime plugin_settings/markdown_settings.vim
 runtime plugin_settings/vim_rainbow_settings.vim 
 runtime plugin_settings/floaterm_settings.vim
-runtime plugin_settings/ale_settings.vim
+" runtime plugin_settings/ale_settings.vim
 runtime plugin_settings/lsp_settings.vim
 
 
