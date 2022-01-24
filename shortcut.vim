@@ -3,8 +3,8 @@ let g:mapleader = "\\"
 
 
 " NERDTree shortcuts
-map <F9> :NERDTreeToggle<CR>
-map <F8> :NERDTreeFind<CR>
+map <s-F9> :NERDTreeToggle<CR>
+map <s-F8> :NERDTreeFind<CR>
 
 
 " markdownPreview shortcuts

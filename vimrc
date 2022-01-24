@@ -35,8 +35,6 @@ set fillchars=vert:\ ,stl:\ ,stlnc:\
 set autochdir            " Move to the directory where the current file is located
 
 
-
-
 runtime shortcut.vim
 runtime indentation_and_format.vim
 runtime search_settings.vim
@@ -121,6 +119,7 @@ runtime plugin_settings/markdown_settings.vim
 runtime plugin_settings/vim_rainbow_settings.vim 
 runtime plugin_settings/floaterm_settings.vim
 runtime plugin_settings/ale_settings.vim
+runtime plugin_settings/lsp_settings.vim
 
 
 colorscheme nord
