@@ -33,7 +33,13 @@ set foldmethod=syntax	 " code fole
 set fillchars=vert:\ ,stl:\ ,stlnc:\
                          " Leave blank space between split windows
 set autochdir            " Move to the directory where the current file is located
-
+set autoindent           " auto indent
+set cindent              " indent in c format
+set cinoptions=g0,:0,N-s,(0
+                         " indent in c format
+set sidescroll=10        " horizontal scroll
+set scrolloff=6          " vertical scroll
+set history=2000         " history scroll back
 
 runtime shortcut.vim
 runtime indentation_and_format.vim

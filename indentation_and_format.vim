@@ -9,9 +9,6 @@ set tabstop=4            " set tab length to 4
 set shiftwidth=4         " set tab length to 4
 set smarttab             " set smart tab
 set backspace=2          " normal backspace
-set sidescroll=10        " horizontal scroll
-set scrolloff=6          " vertical scroll
-set history=2000         " history scroll back
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
