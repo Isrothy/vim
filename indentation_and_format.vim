@@ -1,7 +1,8 @@
 set autoindent           " auto indent
 set cindent              " indent in c format
-set cinoptions=g0,:0,N-s,(0
-                         " indent in c format
+set cinoptions=g0,:0,N-s,(0,l1
+                         " indent in c format  
+set cinoptions+=:0
 set smartindent          " smart indent
 filetype indent on       " indent according to file type
 set expandtab            " change tab into space
@@ -15,8 +16,8 @@ set backspace=2          " normal backspace
 " indent and format of different files
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-autocmd FileType c,cpp,java set formatoptions+=ro
-autocmd FileType c set omnifunc=ccomplete#Complete
+" autocmd FileType c,cpp,java set formatoptions+=ro
+" autocmd FileType c set omnifunc=ccomplete#Complete
 
 autocmd FileType html,xhtml,css,xml,xslt set shiftwidth=2 softtabstop=2
 

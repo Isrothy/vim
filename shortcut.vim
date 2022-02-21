@@ -1,5 +1,5 @@
 " Leader
-let g:mapleader = "\\"
+let g:mapleader = " "
 
 
 " NERDTree shortcuts
@@ -34,8 +34,10 @@ noremap gj j
 noremap gk k
 noremap k gk
 
+" past and format
+nnoremap <leader>p =`]
 
-" auto complete
+"" auto complete
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
@@ -47,8 +49,8 @@ nnoremap <leader>r         :LspRename<CR>
 nnoremap <leader>d         :LspNextDiagnostic<CR>
 nnoremap <leader>e         :LspNextError<CR>
 nnoremap <leader>w         :LspNextWarning<CR>
-nnoremap <leader><s-d>     :LspNextDiagnostic<CR>
-nnoremap <leader><s-e>     :LspNextError<CR>
-nnoremap <leader><s-w>     :LspNextWarning<CR>
+nnoremap <leader><s-d>     :LspPreviousDiagnostic<CR>
+nnoremap <leader><s-e>     :LspPreviousError<CR>
+nnoremap <leader><s-w>     :LspPreviousWarning<CR>
 nnoremap <leader>h         :LspHover<CR>
 

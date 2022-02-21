@@ -105,6 +105,8 @@ Plug 'frazrepo/vim-rainbow'                    " ranbow braces
 
 Plug 'voldikss/vim-floaterm'                   " float terminal
 
+Plug 'mattn/emmet-vim'                         " html
+Plug 'tell-k/vim-browsereload-mac'             " auto reload
 
 call plug#end()
 
@@ -127,5 +129,6 @@ runtime plugin_settings/floaterm_settings.vim
 " runtime plugin_settings/ale_settings.vim
 runtime plugin_settings/lsp_settings.vim
 
+let g:returnApp = "iterm"
 
 colorscheme nord
