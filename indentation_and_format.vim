@@ -26,6 +26,7 @@ autocmd FileType vim,lua,nginx set shiftwidth=2 softtabstop=2
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 autocmd FileType xhtml,html set omnifunc=htmlcomplete#CompleteTags
+let g:html_indent_autotags = "html"
 
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 

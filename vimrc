@@ -40,6 +40,7 @@ set cinoptions=g0,:0,N-s,(0
 set sidescroll=10        " horizontal scroll
 set scrolloff=6          " vertical scroll
 set history=2000         " history scroll back
+set belloff=all
 
 runtime shortcut.vim
 runtime indentation_and_format.vim
@@ -101,7 +102,7 @@ Plug 'iamcco/mathjax-support-for-mkdp'         " makrdown math formula
 Plug 'godlygeek/tabular'                       " makrdown language
 Plug 'plasticboy/vim-markdown'                 " markdown language
 
-Plug 'frazrepo/vim-rainbow'                    " ranbow braces
+Plug 'luochen1990/rainbow'                     " ranbow braces
 
 Plug 'voldikss/vim-floaterm'                   " float terminal
 
@@ -135,6 +136,7 @@ runtime plugin_settings/vim_rainbow_settings.vim
 runtime plugin_settings/floaterm_settings.vim
 " runtime plugin_settings/ale_settings.vim
 runtime plugin_settings/lsp_settings.vim
+runtime plugin_settings/vim_rainbow_settings
 
 let g:returnApp = "iterm"
 

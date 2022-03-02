@@ -34,8 +34,16 @@ noremap gj j
 noremap gk k
 noremap k gk
 
-" past and format
-nnoremap <leader>p =`]
+
+" past and yank
+nnoremap <leader>p  "+p
+nnoremap <leader>P  "+P
+nnoremap <leader>y  "+y
+nnoremap <leader>Y "+Y
+vnoremap <leader>p  "+p
+vnoremap <leader>P  "+P
+vnoremap <leader>y  "+y
+vnoremap <leader>Y  "+Y
 
 "" auto complete
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -47,10 +55,10 @@ imap <c-space> <Plug>(asyncomplete_force_refresh)
 nnoremap <leader>f         :LspDocumentFormat<CR>
 nnoremap <leader>r         :LspRename<CR>
 nnoremap <leader>d         :LspNextDiagnostic<CR>
-nnoremap <leader>e         :LspNextError<CR>
-nnoremap <leader>w         :LspNextWarning<CR>
 nnoremap <leader><s-d>     :LspPreviousDiagnostic<CR>
-nnoremap <leader><s-e>     :LspPreviousError<CR>
-nnoremap <leader><s-w>     :LspPreviousWarning<CR>
-nnoremap <leader>h         :LspHover<CR>
+nnoremap ge                :LspNextError<CR>
+nnoremap g<s-e>            :LspPreviousError<CR>
+nnoremap gw                :LspNextWarning<CR>
+nnoremap g<s-w>            :LspPreviousWarning<CR>
+nnoremap gh                :LspHover<CR>
 
