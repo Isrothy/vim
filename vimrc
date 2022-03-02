@@ -136,7 +136,6 @@ runtime plugin_settings/vim_rainbow_settings.vim
 runtime plugin_settings/floaterm_settings.vim
 " runtime plugin_settings/ale_settings.vim
 runtime plugin_settings/lsp_settings.vim
-runtime plugin_settings/vim_rainbow_settings
 
 let g:returnApp = "iterm"
 
