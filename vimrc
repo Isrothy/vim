@@ -4,6 +4,7 @@ runtime indentation_and_format.vim
 runtime search_settings.vim
 runtime buffer_settings.vim
 runtime code_settings.vim
+runtime keybindings.vim
 
 
 call plug#begin(expand('~/.vim/plugged'))
