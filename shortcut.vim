@@ -22,19 +22,6 @@ nnoremap <silent>   <F9>        :FloatermToggle<CR>
 tnoremap <silent>   <F9>        <C-\><C-n>:FloatermToggle<CR>
 
 
-" switch windows
-nnoremap <c-h>       <c-w>h
-nnoremap <c-l>       <c-w>l
-nnoremap <c-j>       <c-w>j
-nnoremap <c-k>       <c-w>k
-
-" move between line
-noremap j gj
-noremap gj j
-noremap gk k
-noremap k gk
-
-
 " past and yank
 nnoremap <leader>p  "+p
 nnoremap <leader>P  "+P

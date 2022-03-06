@@ -1,47 +1,4 @@
-set nocompatible         " do not support vi
-filetype on              " detect file type
-filetype plugin on       " different plugin setting according to different file type
-set noeb                 " turn off error reminding
-syntax enable            " syntax high light
-syntax on                " color scheme
-set t_Co=256             " turn on 256-color support
-packadd termdebug        " turn on termdebug
-set cmdheight=1          " command line height
-set showcmd              " show lines selected in select mode
-set ruler                " show cursor position
-set laststatus=2         " show status bar
-set number               " show line number
-set relativenumber       " show relative line number
-set cursorline           " high light current line
-highlight CursorLine   cterm=NONE ctermbg=black guibg=NONE guifg=NONE
-                         " high current line 
-set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ [%{(&fenc==\"\"?&enc:&fenc).(&bomb?\",BOM\":\"\")}]\ %c:%l/%L%)
-                         " status line setting
-set whichwrap+=<,>,h,l   " cursor cross line
-set ttimeoutlen=0        " setting<ESC>response time
-set virtualedit=block,onemore
-                         " allow cursor to be at the end of the line 
-set mouse=a              " turn on mouse
-set backspace=indent,eol,start
-                         " allow delete backspace
-set wildmenu             " support zsh
-set wildmode=full        " zsh auto complete
-set hidden               " When the file is not saved, the buffer is saved by vim
-set display=lastline     " Avoid missing a line after the line is broke
-set nofoldenable         " disable folding
-set foldmethod=syntax	 " code fole
-set fillchars=vert:\ ,stl:\ ,stlnc:\
-                         " Leave blank space between split windows
-set autochdir            " Move to the directory where the current file is located
-set autoindent           " auto indent
-set cindent              " indent in c format
-set cinoptions=g0,:0,N-s,(0
-                         " indent in c format
-set sidescroll=10        " horizontal scroll
-set scrolloff=6          " vertical scroll
-set history=2000         " history scroll back
-set belloff=all
-
+runtime basic_settings.vim
 runtime shortcut.vim
 runtime indentation_and_format.vim
 runtime search_settings.vim
@@ -53,10 +10,8 @@ call plug#begin(expand('~/.vim/plugged'))
 
 
 Plug 'arcticicestudio/nord-vim'                " nord color scheme
-Plug 'ackyshake/Spacegray.vim'                 " space gray color scheme
 
-
-Plug 'chxuan/vimplus-startify'                 " setup interface
+Plug 'mhinz/vim-startify'                      " setup interface
 
 Plug 'scrooloose/nerdtree'                     " directory tree
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " directory tree beautify
@@ -75,7 +30,7 @@ Plug 'machakann/vim-highlightedyank'           " high light yank
 
 Plug 'othree/xml.vim'                          " xml support
 
-" Plug 'w0rp/ale'                                " syntax check
+Plug 'w0rp/ale'                                " syntax check
 
 Plug 'prabirshrestha/async.vim'                " LSP
 Plug 'prabirshrestha/vim-lsp'
@@ -83,7 +38,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'mattn/vim-lsp-settings'
 
-" Plug 'rhysd/vim-lsp-ale'                       " bridge ale and lsp
+Plug 'rhysd/vim-lsp-ale'                       " bridge ale and lsp
 
 Plug 'michaeljsmith/vim-indent-object'         " indent object
 
@@ -116,7 +71,7 @@ if executable('sourcekit-lsp')
     au User lsp_setup call lsp#register_server({
         \ 'name': 'sourcekit-lsp',
         \ 'cmd': {server_info->['sourcekit-lsp']},
-        \ 'whitelist': ['swift'],
+        \ 'allowlist': ['swift'],
         \ })
 endif
 
@@ -128,13 +83,21 @@ if executable('bash-language-server')
         \ })
 endif
 
-runtime plugin_settings/vimplus_startify_settings.vim
+" if executable('vscode-eslint-language-server')
+"   au User lsp_setup call lsp#register_server({
+"         \ 'name': 'vscode-eslint-language-server',
+"         \ 'cmd': {server_info->['vscode-esint-language-server']},
+"         \ 'allowlist': ['javascript', 'typescript'],
+"         \})
+" endif
+
+runtime plugin_settings/vim_startify_settings.vim
 runtime plugin_settings/nerd_tree_settings.vim
 runtime plugin_settings/airline_settings.vim
 runtime plugin_settings/markdown_settings.vim
 runtime plugin_settings/vim_rainbow_settings.vim 
 runtime plugin_settings/floaterm_settings.vim
-" runtime plugin_settings/ale_settings.vim
+runtime plugin_settings/ale_settings.vim
 runtime plugin_settings/lsp_settings.vim
 
 let g:returnApp = "iterm"
